@@ -6,7 +6,7 @@ import service3 from '../../assets/service3.png'
 import service4 from '../../assets/service4.png'
 const Services = () => {
     return (
-        <div className='flex flex-col  items-center  w-full min-h-screen h-screen tracking-wide bg-sky-500'>
+        <div id='services' className='flex flex-col  items-center  w-full min-h-screen h-screen tracking-wide bg-sky-500'>
             <p className='text-3xl font-bold  pt-5 text-white'>Services</p>
             <div className="flex w-full h-full px-20 items-center gap-10">
                 <div className="flex flex-col grid-cols-2 w-2/5 h-full justify-center items-center">

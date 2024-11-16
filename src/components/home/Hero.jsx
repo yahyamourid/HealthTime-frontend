@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 import SearchBar from './SearchBar'
 const Hero = () => {
     return (
-        <div className='flex flex-col  w-full min-h-screen h-screen bg-sky-100'>
+        <div id='home' className='flex flex-col  w-full min-h-screen h-screen bg-sky-100'>
             <Navbar />
             <div className="relative flex items-center justify-center h-full">
                 <div className="flex flex-col pt-20 w-3/5 h-full p-10 tracking-wide gap-2.5">
@@ -33,7 +33,7 @@ const Hero = () => {
                     </div>
 
                 </div>
-                <SearchBar />
+                <SearchBar mode={"home"}/>
             </div>
         </div>
     )

@@ -6,7 +6,7 @@ import { RiFeedbackFill } from "react-icons/ri";
 
 const HowItWork = () => {
     return (
-        <div className='flex flex-col  items-center  w-full min-h-screen h-screen tracking-wide bg-gray-50'>
+        <div id='commentçamarche' className='flex flex-col  items-center  w-full min-h-screen h-screen tracking-wide bg-gray-50'>
             <p className='text-3xl font-bold text-sky-900 py-20'>Comment ça marche?</p>
             <div className="flex items-center w-full px-10 gap-5">
 

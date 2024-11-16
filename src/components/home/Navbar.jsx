@@ -19,10 +19,10 @@ const Navbar = () => {
                 <p className='text-sky-700 italic'><span className='text-sky-300'>Health</span>Time</p>
             </a>
             <div className="flex gap-10 text-gray-400 items-center">
-                <a href="" className='text-sky-900'>Accueil</a>
-                <a href="" className='hover:text-sky-900'>Services</a>
-                <a href="" className='hover:text-sky-900'>Comment ça marche</a>
-                <a href="" className='hover:text-sky-900'>Contact</a>
+                <a href="/#home" className='hover:text-sky-900'>Accueil</a>
+                <a href="/#services" className='hover:text-sky-900'>Services</a>
+                <a href="/#commentçamarche" className='hover:text-sky-900'>Comment ça marche</a>
+                <a href="/#contact" className='hover:text-sky-900'>Contact</a>
             </div>
             {storedUserData ?
                 <div className="flex items-center gap-2">
