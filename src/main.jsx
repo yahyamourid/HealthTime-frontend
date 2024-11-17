@@ -19,6 +19,7 @@ import Patients from "./pages/admin/Patients.jsx"
 import Soignants from "./pages/admin/Soignants.jsx"
 import Specialites from "./pages/admin/Specialites.jsx"
 import Statistiques from "./pages/admin/Statistiques.jsx"
+import CalendarRendezVous from "./pages/soignant/CalendarRendezVous.jsx";
 const storedUserData = JSON.parse(localStorage.getItem('userData'));
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -42,7 +43,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* Admin Routes */}
         {storedUserData && storedUserData.role === "ADMIN" && (
           <>
-            <Route path="/admin" element={<DashboardAdmin/>} />
+            <Route path="/admin/dashboard" element={<DashboardAdmin/>} />
             <Route path="/admin/soignants" element={<Soignants />} />
             <Route path="/admin/patients" element={<Patients />} />
             <Route path="/admin/demandes" element={<Demandes />} />
@@ -54,8 +55,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         {/* Soignant Routes */}
         {storedUserData && storedUserData.role === "SOIGNANT" && (
           <>
-            <Route path="/soignant" element={<DashboardSoignant />} />
+            <Route path="/soignant/dashboard" element={<DashboardSoignant />} />
             <Route path="/soignant/profil" element={<Profil />} />
+            <Route path="/soignant/rendez-vous" element={<CalendarRendezVous />} />
           </>
         )}
 

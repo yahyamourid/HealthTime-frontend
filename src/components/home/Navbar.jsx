@@ -26,7 +26,7 @@ const Navbar = () => {
             </div>
             {storedUserData ?
                 <div className="flex items-center gap-2">
-                    <a href={`/${storedUserData.role.toLowerCase()}`}>
+                    <a href={`/${storedUserData.role.toLowerCase()}/dashboard`}>
                         <img
                             src={
                                 {
